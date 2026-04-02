@@ -71,7 +71,7 @@ export default function Home() {
       
       if (scrollY >= scrollHeight - 50) {
         // Smooth loop back to top
-        lenisRef.current.scrollTo(0, { duration: 1.5, easing: (t: number) => t });
+        lenisRef.current?.scrollTo(0, { duration: 1.5, easing: (t: number) => t });
       }
     };
 
